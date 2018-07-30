@@ -2,7 +2,8 @@
 
 This is a simple html form with a Spring Boot RESTful endpoint. This simulates an web analytics request capture. The example hosted on heroku at https://warm-basin-39291.herokuapp.com/.
 
-The service uses KafkaTemplate, initialized via Kafka properties in producer.properties. If you are using a local Kafka setup, update the bootstrap.servers to your local and remove the jaas config. 
+The service uses KafkaTemplate, initialized via Kafka properties in producer.properties. It publishes data/events to a topic called WEB_ANALYTICS_IN.
+If you are using a local Kafka setup, update the bootstrap.servers to your local and remove the jaas config. 
 
 Please see another application (https://github.com/pkamath2/web-analytics) on details on how Kafka is used for stream processing. 
 
